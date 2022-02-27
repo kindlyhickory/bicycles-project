@@ -23,16 +23,16 @@
   }
 
   @include tablet {
-    max-width: 260px
+    max-width: 220px;
+    border-top: 10px solid $lightTheme;
+    border-bottom: 10px solid $lightTheme;
+    border-left: 27px solid $lightTheme;
+    border-right: 27px solid $lightTheme;
   }
 
   @include phone {
     max-width: 234px;
     aspect-ratio: 234/160;
-    border-top: 10px solid $lightTheme;
-    border-bottom: 10px solid $lightTheme;
-    border-left: 27px solid $lightTheme;
-    border-right: 27px solid $lightTheme;
     top: 220px;
     margin-left: -30px;
   }

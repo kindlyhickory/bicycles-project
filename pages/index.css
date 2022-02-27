@@ -120,6 +120,11 @@
   border-radius: 4px;
   width: 360px;
 }
+@media screen and (max-width: 768px) {
+  .input-container {
+    width: 300px;
+  }
+}
 @media screen and (max-width: 500px) {
   .input-container {
     width: 284px;
@@ -197,17 +202,17 @@
 }
 @media screen and (max-width: 768px) {
   .information__bike-fix {
-    max-width: 260px;
+    max-width: 220px;
+    border-top: 10px solid #f4f4f4;
+    border-bottom: 10px solid #f4f4f4;
+    border-left: 27px solid #f4f4f4;
+    border-right: 27px solid #f4f4f4;
   }
 }
 @media screen and (max-width: 500px) {
   .information__bike-fix {
     max-width: 234px;
     aspect-ratio: 234/160;
-    border-top: 10px solid #f4f4f4;
-    border-bottom: 10px solid #f4f4f4;
-    border-left: 27px solid #f4f4f4;
-    border-right: 27px solid #f4f4f4;
     top: 220px;
     margin-left: -30px;
   }
@@ -1469,7 +1474,7 @@
   outline: none;
   width: 22px;
   height: 22px;
-  margin-right: 13.5px;
+  margin-right: 18px;
   cursor: pointer;
   transition: opacity 0.2s linear;
 }
