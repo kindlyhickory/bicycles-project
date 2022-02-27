@@ -1,0 +1,6 @@
+.nav {
+  @include phone {
+    margin-top: 70px;
+    margin-bottom: 314px;
+  }
+}

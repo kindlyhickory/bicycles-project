@@ -1,0 +1,39 @@
+.information__bike-fix {
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  border-top: 20px solid $lightTheme;
+  border-bottom: 20px solid $lightTheme;
+  border-left: 50px solid $lightTheme;
+  border-right: 50px solid $lightTheme;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-position: center;
+  background-color:$lightTheme;
+  background-repeat: no-repeat;
+  max-width: 440px;
+  aspect-ratio: 440/300;
+  position: sticky;
+  top: 372px;
+
+  @include desktop {
+    max-width: 380px
+  }
+
+  @include tinyDesktop {
+    max-width: 320px
+  }
+
+  @include tablet {
+    max-width: 260px
+  }
+
+  @include phone {
+    max-width: 234px;
+    aspect-ratio: 234/160;
+    border-top: 10px solid $lightTheme;
+    border-bottom: 10px solid $lightTheme;
+    border-left: 27px solid $lightTheme;
+    border-right: 27px solid $lightTheme;
+    top: 220px;
+    margin-left: -30px;
+  }
+}

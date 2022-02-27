@@ -1,0 +1,16 @@
+.merckx__title {
+  @include font-styling(600, 34px, 44px);
+  letter-spacing: -0.5px;
+  margin: 0 0 0 0;
+
+  @include desktop {
+    @include font-styling(600, 18px, 24px);
+  }
+
+
+
+  @include phone {
+    margin: 0 0 40px 0;
+    @include font-styling(600, 23px, 29px);
+  }
+}

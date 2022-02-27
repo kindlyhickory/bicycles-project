@@ -1,0 +1,5 @@
+.menu-popup_dark {
+  @include phone{
+    background-color: $darkTheme;
+  }
+}

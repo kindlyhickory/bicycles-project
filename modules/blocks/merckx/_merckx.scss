@@ -1,0 +1,26 @@
+.merckx {
+  max-width: 1440px;
+  box-sizing: border-box;
+  // @include flex(row, stretch, flex-start);
+  display: grid;
+  grid-template-columns: 54.16% 36.16%;
+  @include font;
+  margin: 0 auto;
+  padding: 120px 120px 60px;
+  column-gap: 80px;
+  position: relative;
+
+  @include tinyDesktop {
+    padding: 120px 60px 60px;
+  }
+
+  @include tablet {
+    padding: 40px 60px 60px;
+  }
+
+  @include phone {
+    @include flex(column, stretch, flex-start);
+    padding: 20px 18px 40px 18px;
+    @include grayLinePhone;
+  }
+}

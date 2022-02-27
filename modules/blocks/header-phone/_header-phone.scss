@@ -1,0 +1,14 @@
+.header-phone{
+  height: 0;
+  overflow: hidden;
+  @include phone {
+    visibility:visible;
+    opacity: 1;
+    width: 100vw;
+    height: 74px;
+    background-color: $lightTheme;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+  }
+}

@@ -1,0 +1,5 @@
+.footer__label-email {
+  @include font-styling(600, 24px, 32px);
+  max-width: 229px;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,19 @@
+.information__title {
+  @include font-styling(bold, 55px, 60px);
+  letter-spacing: -0.5px;
+  padding: 0;
+  margin: 0 0 0 0;
+
+  @include tinyDesktop {
+    @include font-styling(bold, 45px, 50px);
+  }
+
+  @include tablet {
+    @include font-styling(bold, 36px, 45px);
+  }
+
+  @include phone {
+    @include font-styling(bold, 32px, 40px);
+
+  }
+}

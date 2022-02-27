@@ -1,0 +1,15 @@
+.highway__subtitle {
+  @include font-styling(normal, 18px, 28px);
+  margin: 0 0 80px 0;
+  max-width: 460px;
+
+  @include tinyDesktop {
+    @include font-styling(normal, 14px, 22px);
+  }
+
+  @include phone {
+    grid-area: subtitle;
+    @include font-styling(normal, 12px, 18px);
+    margin: 0;
+  }
+}

@@ -1,0 +1,43 @@
+.information__button-detailed {
+  @include font;
+  @include font-styling(600, 14px, 18px);
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 1px;
+  width: 180px;
+  height: 50px;
+  background-color: $buttonColor;
+  border-radius: 4px;
+  padding: 0px;
+  margin: 0 0 167px 0;
+  border: none;
+  position: relative;
+  z-index: 2;
+
+  @include tablet {
+    margin: 0 0 70px 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    background-color: #319e75;
+    border-radius: 4px;
+    transition: all 1s linear;
+  }
+  &:hover::before {
+    width: 100%;
+    z-index: -1;
+  }
+
+  @include phone {
+    margin: 0;
+    height: 46px;
+    width: 100%;
+  }
+}

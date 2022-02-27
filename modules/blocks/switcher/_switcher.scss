@@ -1,0 +1,6 @@
+.switcher {
+  width: 140px;
+  height: 40px;
+  align-self: flex-end;
+  @include flex(row, center, space-between);
+}

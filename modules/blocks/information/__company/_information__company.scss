@@ -1,0 +1,25 @@
+.information__company {
+  @include font-styling(normal, 18px, 18px);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 214px;
+    width: 132px;
+    height: 2px;
+    background-color: #D7D4D4;
+  }
+
+  @include tablet {
+    &::after {
+      visibility: hidden;
+    }
+  }
+
+  @include phone {
+    display: none;
+  }
+}

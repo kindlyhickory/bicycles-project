@@ -1,0 +1,15 @@
+.menu-popup {
+  visibility: hidden;
+  opacity: 0;
+  @include phone {
+    @include flex(column, center, flex-start);
+    position: fixed;
+    top: 74px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: $lightTheme;
+    @include font;
+
+  }
+}

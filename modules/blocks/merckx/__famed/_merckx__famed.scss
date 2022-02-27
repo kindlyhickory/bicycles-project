@@ -1,0 +1,8 @@
+.merckx__famed {
+  @include font-styling(normal, 16px, 28px);
+  margin: 0;
+
+  @include phone {
+    @include font-styling(normal, 10px, 16px);
+  }
+}

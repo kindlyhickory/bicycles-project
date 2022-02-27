@@ -1,0 +1,12 @@
+.highway__swiper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-bottom: 50px;
+  overflow: hidden;
+  @include phone {
+    grid-area: swiper;
+    margin-bottom: 0;
+  }
+}

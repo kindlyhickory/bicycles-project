@@ -1,0 +1,27 @@
+.trainings {
+  @include font;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 38.42% auto;
+  box-sizing: border-box;
+  padding: 150px 120px 120px 120px;
+  column-gap: 160px;
+
+  @include tinyDesktop {
+    padding: 150px 60px 120px 60px;
+    column-gap: 70px;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+    padding: 40px 18px;
+    column-gap: 0;
+    row-gap: 40px;
+    @include grayLinePhone;
+  }
+}

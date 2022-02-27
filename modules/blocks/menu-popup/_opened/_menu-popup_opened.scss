@@ -1,0 +1,6 @@
+.menu-popup_opened {
+  @include phone{
+    visibility: visible;
+    opacity: 1;
+}
+}

@@ -1,0 +1,10 @@
+.switcher__ball {
+  height: 20px;
+  width: 20px;
+  background-color: #24B47E;
+  border-radius: 10px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform .2s linear;
+}

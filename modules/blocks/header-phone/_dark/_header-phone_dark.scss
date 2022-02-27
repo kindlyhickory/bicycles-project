@@ -1,0 +1,5 @@
+.header-phone_dark {
+  @include phone {
+    background-color: $darkTheme;
+  }
+}

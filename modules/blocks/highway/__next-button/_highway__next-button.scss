@@ -1,0 +1,14 @@
+.highway__next-button {
+  @include pagination-button(50px, 50px);
+  background-image: url('../images/arrow-light-theme.svg');
+  transform: rotate(180deg);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  @include phone {
+    @include pagination-button(24px, 24px);
+    align-self: center;
+    background-size: 4.5px 10px;
+    grid-area: next-button;
+  }
+}

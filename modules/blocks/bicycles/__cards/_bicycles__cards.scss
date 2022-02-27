@@ -1,0 +1,10 @@
+.bicycles__cards {
+  @include flex(row, stretch, space-evenly);
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  @include phone {
+    gap: 0;
+  }
+}

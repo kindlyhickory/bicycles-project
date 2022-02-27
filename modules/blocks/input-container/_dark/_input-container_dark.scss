@@ -1,0 +1,6 @@
+.input-container_dark {
+  border: 1px solid rgba(125, 125, 125, 0.5);
+  &:focus-within {
+    border: 1px solid #7D7D7D;
+  }
+}

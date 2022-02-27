@@ -1,0 +1,9 @@
+.bicycles__card-name {
+  @include font-styling(600, 18px, 22px);
+  margin: 0;
+  @include phone {
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
