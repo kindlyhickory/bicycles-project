@@ -1,0 +1,6 @@
+.footer__switcher {
+  @include phone {
+    visibility: hidden;
+    height: 0;
+  }
+}

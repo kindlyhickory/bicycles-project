@@ -1,0 +1,8 @@
+.switcher__button {
+  opacity: 0;
+  position: absolute;
+
+  &:checked + .footer__button-label .footer__ball {
+    transform: translateX(20px);
+  }
+}

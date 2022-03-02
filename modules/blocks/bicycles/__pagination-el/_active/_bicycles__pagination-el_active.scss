@@ -1,0 +1,7 @@
+.bicycles__pagination-el_active {
+  color: $boldText;
+  &:hover {
+    opacity: .75;
+    color: $boldText
+  }
+}

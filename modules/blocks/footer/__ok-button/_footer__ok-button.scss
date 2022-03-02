@@ -1,0 +1,19 @@
+.footer__ok-button {
+  position: relative;
+  width: 16px;
+  height: 28px;
+  background-color: transparent;
+  margin-right: 22px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  visibility: hidden;
+  align-self: center;
+  @include font-styling(500, 13px, 28px);
+  z-index: 3;
+  transition: visibility .1s linear;
+}
+
+.footer__input-email:focus + .footer__ok-button {
+  visibility: visible;
+}

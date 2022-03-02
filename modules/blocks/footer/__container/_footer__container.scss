@@ -1,0 +1,21 @@
+.footer__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  @include font;
+  @include flex(row, stretch, space-between);
+  box-sizing: border-box;
+  padding: 87px 120px 53px 120px;
+
+  @include tinyDesktop {
+    padding: 87px 60px 53px 60px;
+  }
+
+  @include phone {
+    @include flex(column, stretch, space-between);
+    padding: 60px 18px 25px 18px;
+    background-image: url("../images/gear-logo.svg");
+    background-position: right 20px bottom 20px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+  }
+}

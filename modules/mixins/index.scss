@@ -1,0 +1,79 @@
+@mixin flex($direction, $align-items, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align-items;
+  justify-content: $justify;
+}
+
+@mixin font() {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-style: normal;
+}
+
+@mixin font-styling($font-weight, $font-size, $line-height) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin pagination-button($width, $height) {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: $width;
+  height: $height;
+  border-radius: $width;
+  background-color: $paginationButtonColor;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity .4s linear;
+
+  &:hover {
+    opacity: .6;
+  }
+}
+
+@mixin hoverOpacity($opacity) {
+  &:hover{
+    opacity: $opacity;
+  }
+
+}
+
+@mixin grayLinePhone {
+  position: relative;
+  margin-top: 40px;
+    &::before{
+      content: "";
+      background-color: #e3e3e3;
+      position: absolute;
+      top: 0;
+      left: 18px;
+      height: 1px;
+      width: calc(100% - 36px);
+    }
+}
+
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin tinyDesktop {
+  @media screen and (max-width: $tinyDesktop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
+}

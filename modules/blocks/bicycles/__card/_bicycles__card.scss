@@ -1,0 +1,18 @@
+.bicycles__card {
+  max-width: 340px;
+  aspect-ratio: 340/340;
+  text-decoration: none;
+  @include phone {
+    z-index: 3;
+    background-color: $lightTheme;
+    border: 5px solid $lightTheme;
+    border-radius: 20px;
+    border-top: 15px solid $lightTheme;
+    border-right: 15px solid $lightTheme;
+    border-left: 15px solid $lightTheme;
+    border-bottom: 16px solid $lightTheme;
+    filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+    max-width: 254px;
+    // width: 100%;
+  }
+}

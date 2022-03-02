@@ -1,0 +1,7 @@
+.link_active-link-theme_light {
+  color: $boldText;
+  &:hover {
+    opacity: .75;
+    color: $boldText
+  }
+}

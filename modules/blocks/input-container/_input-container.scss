@@ -1,0 +1,18 @@
+.input-container {
+  @include flex(row, stretch, flex-start);
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  border-radius: 4px;
+  width: 360px;
+
+  @include tablet {
+    width: 300px;
+  }
+
+  @include phone {
+    width: 284px;
+  }
+}
+
+.input-container:focus-within {
+  border: 1px solid #c7c7c7;
+}

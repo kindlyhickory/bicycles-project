@@ -1,0 +1,6 @@
+.link_type_light-bicycles {
+  color: $withOpacity;
+  &:hover {
+    color: $withOpacityHover;
+  }
+}

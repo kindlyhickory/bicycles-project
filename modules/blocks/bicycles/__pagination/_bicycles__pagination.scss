@@ -1,0 +1,12 @@
+.bicycles__pagination {
+  @include flex(row, flex-end, space-between);
+
+  @include tablet{
+    justify-content: flex-start;
+  }
+
+  @include phone {
+    display: none;
+  }
+
+}

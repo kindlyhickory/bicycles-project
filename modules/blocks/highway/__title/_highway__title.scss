@@ -1,0 +1,10 @@
+.highway__title {
+  margin: 0 0 50px 0;
+  max-width: 460px;
+
+  @include phone {
+    grid-area: title;
+    margin: 0;
+  }
+
+}

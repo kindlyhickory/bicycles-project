@@ -1,0 +1,18 @@
+.header {
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  height: 74px;
+  z-index: 3;
+  background-color: inherit;
+  max-width: 1440px;
+  @include flex(row, center, flex-end);
+
+  @include font;
+
+  @include phone {
+    max-width: 320px;
+    max-height: 0;
+    overflow: hidden;
+  }
+}

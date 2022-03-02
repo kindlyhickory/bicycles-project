@@ -1,0 +1,12 @@
+.trainings__item {
+  @include font-styling(600, 18px, 28px);
+  color: $boldText;
+  margin-right: 30px;
+  @include phone {
+    @include font-styling(600, 14px, 20px);
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

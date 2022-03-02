@@ -1,0 +1,22 @@
+.bicycles {
+  max-width: 1440px;
+  box-sizing: border-box;
+  padding: 60px 120px;
+  @include font;
+  margin: 0 auto;
+  position: relative;
+
+  @include tinyDesktop {
+    padding: 60px 60px;
+  }
+
+  @include tablet {
+    overflow: hidden;
+  }
+
+  @include phone {
+    padding: 40px 18px;
+    overflow: hidden;
+    @include grayLinePhone;
+  }
+}

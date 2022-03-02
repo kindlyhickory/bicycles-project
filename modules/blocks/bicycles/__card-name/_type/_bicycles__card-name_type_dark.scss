@@ -1,0 +1,6 @@
+.bicycles__card-name_type_dark {
+  color: #fff;
+  @include phone {
+    color: $boldText;
+  }
+}

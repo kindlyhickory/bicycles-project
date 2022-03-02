@@ -1,0 +1,142 @@
+@import url("../vendor/normalize.css");
+@import "../modules/variables/index.scss";
+@import "../modules/mixins/index.scss";
+@import url("../vendor/fonts.css");
+
+
+@import "../modules/blocks/header/header";
+@import "../modules/blocks/nav/nav";
+@import "../modules/blocks/links/links";
+@import "../modules/blocks/links/__item/links__item";
+@import "../modules/blocks/links/_type/links_type_popup";
+@import "../modules/blocks/links/__item/_type/links__item_type_popup";
+@import "../modules/blocks/main-title/main-title";
+@import "../modules/blocks/main-subtitle/main-subtitle";
+
+
+@import "../modules/blocks/link/link";
+@import "../modules/blocks/link/_type/link_type_dark-bicycles";
+@import "../modules/blocks/link/_type/link_type_light-bicycles";
+@import "../modules/blocks/link/_active-link-theme/link_active-link-theme_dark";
+@import "../modules/blocks/link/_active-link-theme/link_active-link-theme_light";
+@import "../modules/blocks/link/_theme/link_theme_dark";
+@import "../modules/blocks/link/_theme/link_theme_light";
+
+
+@import "../modules/blocks/title/_theme/title_theme_dark";
+@import "../modules/blocks/title/_theme/title_theme_light";
+@import "../modules/blocks/subtitle/_type/subtitle_theme_dark";
+@import "../modules/blocks/subtitle/_type/subtitle_theme_light";
+
+@import "../modules/blocks/input-container/input-container";
+
+@import "../modules/blocks/page/page";
+@import "../modules/blocks/page/_theme/page_theme_dark";
+
+@import "../modules/blocks/information/information";
+@import "../modules/blocks/information/__bike-fix/information__bike-fix";
+@import "../modules/blocks/information/__button-detailed/information__button-detailed";
+@import "../modules/blocks/information/__company/information__company";
+@import "../modules/blocks/information/__forest/information__forest";
+@import "../modules/blocks/information/__images/information__images";
+@import "../modules/blocks/information/__text/information__text";
+@import "../modules/blocks/information/__title/information__title";
+@import "../modules/blocks/information/__about/information__about";
+@import "../modules/blocks/information/__company-wrapper/information__company-wrapper";
+
+@import "../modules/blocks/merckx/merckx";
+@import "../modules/blocks/merckx/__famed/merckx__famed";
+@import "../modules/blocks/merckx/__image/merckx__image";
+@import "../modules/blocks/merckx/__name/merckx__name";
+@import "../modules/blocks/merckx/__text/merckx__text";
+@import "../modules/blocks/merckx/__title/merckx__title";
+
+@import "../modules/blocks/highway/highway";
+@import "../modules/blocks/highway/__title/highway__title";
+@import "../modules/blocks/highway/__subtitle/highway__subtitle";
+@import "../modules/blocks/highway/__list/highway__list";
+@import "../modules/blocks/highway/__next-button/highway__next-button";
+@import "../modules/blocks/highway/__pages/highway__pages";
+@import "../modules/blocks/highway/__pagination/highway__pagination";
+@import "../modules/blocks/highway/__previous-button/highway__previous-button";
+@import "../modules/blocks/highway/__previous-button/_dark/highway__previous-button_dark";
+@import "../modules/blocks/highway/__next-button/_dark/highway__next-button_dark";
+@import "../modules/blocks/highway/__image/highway__image";
+@import "../modules/blocks/highway/__swiper/highway__swiper";
+@import "../modules/blocks/highway/__image-container/highway__image-container";
+@import "../modules/blocks/highway/__rectangle/highway__rectangle";
+@import "../modules/blocks/highway/__rectangle/_visible/highway__rectangle_visible";
+@import "../modules/blocks/highway/__line/highway__line";
+@import "../modules/blocks/highway/__line/_visible/highway__line_visible";
+
+@import "../modules/blocks/bicycles/bicycles";
+@import "../modules/blocks/bicycles/__cards/bicycles__cards";
+@import "../modules/blocks/bicycles/__card-image/bicycles__card-image";
+@import "../modules/blocks/bicycles/__card-image/_theme/bicycles__card-image_theme_dark";
+@import "../modules/blocks/bicycles/__card-name/bicycles__card-name";
+@import "../modules/blocks/bicycles/__card-name/_type/bicycles__card-name_type_dark";
+@import "../modules/blocks/bicycles/__card-name/_type/bicycles__card-name_type_light";
+@import "../modules/blocks/bicycles/__card/bicycles__card";
+@import "../modules/blocks/bicycles/__pagination/bicycles__pagination";
+@import "../modules/blocks/bicycles/__pagination-select/bicycles__pagination-select";
+@import "../modules/blocks/bicycles/__pagination-el/bicycles__pagination-el";
+@import "../modules/blocks/bicycles/__pagination-el/_active/bicycles__pagination-el_active";
+@import "../modules/blocks/bicycles/__title/bicycles__title";
+@import "../modules/blocks/bicycles/__about/bicycles__about";
+@import "../modules/blocks/bicycles/__swiper/bicycles__swiper";
+@import "../modules/blocks/bicycles/__swiper-pagination/bicycles__swiper-pagination";
+@import "../modules/blocks/bicycles/__swiper-wrapper/bicycles__swiper-wrapper";
+
+@import "../modules/blocks/swiper-pagination-bullet/swiper-pagination-bullet";
+@import "../modules/blocks/swiper-pagination-bullet/_active/swiper-pagination-bullet_active";
+
+
+@import "../modules/blocks/trainings/trainings";
+@import "../modules/blocks/trainings/__image/trainings__image";
+@import "../modules/blocks/trainings/__information/trainings__information";
+@import "../modules/blocks/trainings/__item/trainings__item";
+@import "../modules/blocks/trainings/__list/trainings__list";
+@import "../modules/blocks/trainings/__subtitle/trainings__subtitle";
+@import "../modules/blocks/trainings/__title/trainings__title";
+@import "../modules/blocks/trainings/__link/trainings__link";
+
+
+@import "../modules/blocks/footer/footer";
+@import "../modules/blocks/footer/_dark/footer_dark";
+@import "../modules/blocks/footer/__ok-button/footer__ok-button";
+@import "../modules/blocks/footer/__container/footer__container";
+@import "../modules/blocks/footer/__copyright/footer__copyright";
+@import "../modules/blocks/footer/__copyright/_dark/footer__copyright_dark";
+@import "../modules/blocks/footer/__form/footer__form";
+@import "../modules/blocks/footer/__information/footer__information";
+@import "../modules/blocks/footer/__input-email/footer__input-email";
+@import "../modules/blocks/footer/__input-email/_dark/footer__input-email_dark";
+@import "../modules/blocks/footer/__label-email/footer__label-email";
+@import "../modules/blocks/footer/__ok-button/_dark/footer__ok-button_dark";
+@import "../modules/blocks/input-container/_dark/input-container_dark";
+
+@import "../modules/blocks/switcher/switcher";
+@import "../modules/blocks/switcher/__ball/switcher__ball";
+@import "../modules/blocks/switcher/__button-label/switcher__button-label";
+@import "../modules/blocks/switcher/__button-label/_dark/switcher__button-label_dark";
+@import "../modules/blocks/switcher/__button/switcher__button";
+@import "../modules/blocks/switcher/__icon/_dark/switcher__icon_dark";
+@import "../modules/blocks/switcher/__icon/switcher__icon";
+@import "../modules/blocks/switcher/_type/switcher_type_popup";
+@import "../modules/blocks/footer/__switcher/footer__switcher";
+
+
+
+@import "../modules/blocks/header-phone/header-phone";
+@import "../modules/blocks/header-phone/_dark/header-phone_dark";
+@import "../modules/blocks/header-phone/__button/header-phone__button";
+@import "../modules/blocks/header-phone/__button/_type/header-phone__button_type_close";
+@import "../modules/blocks/header-phone/__button/_type/header-phone__button_type_open";
+@import "../modules/blocks/header-phone/__button-container/header-phone__button-container";
+
+@import "../modules/blocks/menu-popup/menu-popup";
+@import "../modules/blocks/menu-popup/_dark/menu-popup__dark";
+@import "../modules/blocks/menu-popup/_opened/menu-popup_opened";
+@import "../modules/blocks/menu-popup/__container/menu-popup__container";
+
+// @import "../modules/blocks";

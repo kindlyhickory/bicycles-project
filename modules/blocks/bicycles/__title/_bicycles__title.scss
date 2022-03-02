@@ -1,0 +1,13 @@
+.bicycles__title {
+  margin: 0;
+  display: inline-block;
+
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
+
+  @include phone {
+    margin: 0 0 40px 0;
+  }
+}

@@ -1,0 +1,14 @@
+.links__item {
+  margin-right: 34px;
+  @include font-styling(500, 14px, 18px);
+
+  @include phone {
+    margin-bottom: 32px;
+    @include font-styling(500, 18px, 18px);
+  }
+
+  &:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}

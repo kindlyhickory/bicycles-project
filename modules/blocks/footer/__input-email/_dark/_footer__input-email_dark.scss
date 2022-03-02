@@ -1,0 +1,12 @@
+.footer__input-email_dark {
+  background-color: #2f2f2f;
+  color: #fff;
+  &::placeholder {
+    color: #fff;
+    opacity: .7;
+  }
+  &:hover::placeholder {
+    color: #fff;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,13 @@
+.highway__previous-button {
+  @include pagination-button(50px, 50px);
+  cursor: pointer;
+  margin-right: 20px;
+  background-image: url('../images/arrow-light-theme.svg');
+  @include phone {
+    @include pagination-button(24px, 24px);
+    align-self: center;
+    grid-area: previous-button;
+    margin-right: 10px;
+    background-size: 4.5px 10px;
+  }
+}

@@ -1,0 +1,9 @@
+.trainings__subtitle {
+  max-width: 460px;
+  margin: 0 0 182px 0;
+
+  @include tablet {
+    margin: 0 0 40px 0;
+  }
+
+}

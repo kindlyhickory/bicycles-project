@@ -1,0 +1,24 @@
+.highway {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 0 60px 120px;
+  box-sizing: border-box;
+  @include font;
+  position: relative;
+
+  @include tinyDesktop {
+    padding: 60px 0 60px 60px;
+  }
+
+  @include phone {
+    display: grid;
+    row-gap: 40px;
+    grid-template-rows: repeat(3, min-content);
+    grid-template-areas:
+    "title . previous-button next-button"
+    "swiper swiper swiper swiper"
+    "subtitle subtitle subtitle subtitle";
+    padding: 40px 18px;
+    @include grayLinePhone;
+  }
+}

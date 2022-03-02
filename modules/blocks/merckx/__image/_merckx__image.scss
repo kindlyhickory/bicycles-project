@@ -1,0 +1,15 @@
+.merckx__image {
+  width:100%;
+  aspect-ratio: 650/460;
+
+
+  // @include desktop {
+  //   max-width: 450px;
+  // }
+
+  @include phone {
+    max-width: 284px;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
