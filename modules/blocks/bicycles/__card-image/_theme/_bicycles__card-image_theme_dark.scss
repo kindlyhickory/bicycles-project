@@ -1,0 +1,5 @@
+.bicycles__card-image_theme_dark {
+  &:hover {
+    filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.55));
+  }
+}

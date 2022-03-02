@@ -1,0 +1,15 @@
+.main-title {
+  @include font-styling(bold, 55px, 60px);
+  @include tinyDesktop {
+    @include font-styling(bold, 45px, 50px);
+  }
+
+  @include tablet {
+    @include font-styling(bold, 36px, 45px);
+  }
+
+  @include phone {
+    @include font-styling(bold, 32px, 40px);
+
+  }
+}

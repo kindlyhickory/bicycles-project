@@ -1,6 +1,7 @@
 .menu-popup {
   visibility: hidden;
   opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s linear;
   @include phone {
     @include flex(column, center, flex-start);
     position: fixed;

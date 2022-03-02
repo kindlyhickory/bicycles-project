@@ -1,18 +1,6 @@
 .trainings__title {
-  @include font-styling(bold, 55px, 60px);
   letter-spacing: -0.5px;
   max-width: 460px;
   margin: 0 0 50px 0;
 
-  @include tinyDesktop {
-    @include font-styling(bold, 42px, 50px);
-  }
-
-  @include tablet {
-    @include font-styling(bold, 36px, 44px);
-  }
-  @include phone {
-    @include font-styling(bold, 32px, 40px);
-    margin: 0;
-  }
 }

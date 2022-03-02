@@ -1,18 +1,9 @@
 .trainings__subtitle {
-  @include font-styling(normal, 18px, 28px);
   max-width: 460px;
   margin: 0 0 182px 0;
-
-  @include tinyDesktop {
-    @include font-styling(normal, 14px, 22px);
-  }
 
   @include tablet {
     margin: 0 0 40px 0;
   }
 
-  @include phone {
-    @include font-styling(normal, 12px, 18px);
-
-  }
 }

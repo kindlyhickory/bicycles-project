@@ -1,15 +1,9 @@
 .highway__title {
-  @include font-styling(bold, 55px, 60px);
   margin: 0 0 50px 0;
   max-width: 460px;
 
-  @include tinyDesktop {
-    @include font-styling(bold, 45px, 50px);
-  }
-
   @include phone {
     grid-area: title;
-    @include font-styling(bold, 32px, 40px);
     margin: 0;
   }
 

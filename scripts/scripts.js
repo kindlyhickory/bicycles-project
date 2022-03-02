@@ -1,5 +1,3 @@
-// import bicycles from "./constants"
-
 const bicycles = {
   highway: [
     {
@@ -118,6 +116,9 @@ function initBicyclesSwiper() {
 
 let bicyclesSwiper = initBicyclesSwiper();
 
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+
 // bicycels elements
 const bicycleTemplate = document.querySelector(".bicycles__template").content;
 const bicyclePagination = document.querySelector(".bicycles__pagination");
@@ -188,6 +189,18 @@ slideButtons.forEach(slideButton => {
   })
 })
 
+// smooth scroll to anchors
+for (let anchor of anchors) {
+  anchor.addEventListener("click", (e) => {
+    e.preventDefault();
+    const id = anchor.getAttribute('href');
+    document.querySelector('' + id).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  })
+}
+
 
 // event listener for closing mobile-header
 closeHeaderButton.addEventListener("click", () => {
@@ -211,25 +224,27 @@ themeSwitchButton.forEach(button => button.addEventListener("click", switchTheme
 function switchTheme() {
   const bicyclesCardNames = document.querySelectorAll('.bicycles__card-name');
   const titles = document.querySelectorAll(".title");
+  const bicycleImages = document.querySelectorAll(".bicycles__card-image");
+
   page.classList.toggle("page_theme_dark");
   titles.forEach(title => {
-    title.classList.toggle("theme-light-title");
-    title.classList.toggle("theme-dark-title");
+    title.classList.toggle("title_theme_light");
+    title.classList.toggle("title_theme_dark");
   })
   subtitles.forEach(subtitle => {
-    subtitle.classList.toggle("theme-light-subtitle");
-    subtitle.classList.toggle("theme-dark-subtitle");
+    subtitle.classList.toggle("subtitle_theme_light");
+    subtitle.classList.toggle("subtitle_theme_dark");
   })
   links.forEach(link => {
-    link.classList.toggle("theme-light-link");
-    link.classList.toggle("theme-dark-link");
+    link.classList.toggle("link_theme_light");
+    link.classList.toggle("link_theme_dark");
   })
   bicyclesLinks.forEach(bicycleLink => {
-    bicycleLink.classList.toggle("theme-light-link_type_bicycles");
-    bicycleLink.classList.toggle("theme-dark-link_type_bicycles");
-    if (bicycleLink.classList.contains("theme-light-link_active") || bicycleLink.classList.contains("theme-dark-link_active")) {
-      bicycleLink.classList.toggle("theme-light-link_active");
-      bicycleLink.classList.toggle("theme-dark-link_active");
+    bicycleLink.classList.toggle("link_type_light-bicycles");
+    bicycleLink.classList.toggle("link_type_dark-bicycles");
+    if (bicycleLink.classList.contains("link_active-link-theme_dark") || bicycleLink.classList.contains("link_active-link-theme_light")) {
+      bicycleLink.classList.toggle("link_active-link-theme_light");
+      bicycleLink.classList.toggle("link_active-link-theme_dark");
     }
   })
   footerIcons.forEach(footerIcon => {
@@ -246,6 +261,10 @@ function switchTheme() {
   bicyclesCardNames.forEach(cardName => {
     cardName.classList.toggle("bicycles__card-name_type_light");
     cardName.classList.toggle("bicycles__card-name_type_dark");
+  })
+
+  bicycleImages.forEach(image => {
+    image.classList.toggle("bicycles__card-image_theme_dark");
   })
 
   footerOkButton.classList.toggle("footer__ok-button_dark");
@@ -274,26 +293,26 @@ function resetBicycles() {
 // event listeners for bicycles pagination
 paginationElements.forEach(paginationEl => {
   paginationEl.addEventListener("click", () => {
-    if (lightTheme && !paginationEl.classList.contains("theme-light-link_active")) {
-      paginationEl.classList.toggle("theme-light-link_active");
+    if (lightTheme && !paginationEl.classList.contains("link_active-link-theme_light")) {
+      paginationEl.classList.toggle("link_active-link-theme_light");
     }
-    else if (!lightTheme && !paginationEl.classList.contains("theme-dark-link_active")) {
-      paginationEl.classList.toggle("theme-dark-link_active");
+    else if (!lightTheme && !paginationEl.classList.contains("link_active-link-theme_dark")) {
+      paginationEl.classList.toggle("link_active-link-theme_dark");
     }
   });
   paginationEl.addEventListener("click", () => {
     const paginationElementsWithout = Array.from(paginationElements).filter(el => el !== paginationEl);
     paginationElementsWithout.forEach(element => {
       if (lightTheme) {
-        element.classList.remove("theme-light-link_active")
+        element.classList.remove("link_active-link-theme_light")
       }
       else {
-        element.classList.remove("theme-dark-link_active")
+        element.classList.remove("link_active-link-theme_dark")
       }
     })
   })
   paginationEl.addEventListener("click", () => {
-    if (paginationEl.classList.contains("theme-light-link_active") || paginationEl.classList.contains("theme-dark-link_active")) {
+    if (paginationEl.classList.contains("link_active-link-theme_light") || paginationEl.classList.contains("link_active-link-theme_dark")) {
       resetBicycles();
       if (paginationEl.classList.contains("bicycles__pagination-el_type_highway")) {
         addBicycles(bicycles.highway);
@@ -323,6 +342,10 @@ function createCard(name, src, alt, href) {
   const bicycleElement = bicycleTemplate.querySelector(".bicycles__card").cloneNode("true");
   const bicycleImage = bicycleElement.querySelector(".bicycles__card-image");
   const bicycleName = bicycleElement.querySelector(".bicycles__card-name");
+  if (!lightTheme) {
+    bicycleName.classList.toggle("bicycles__card-name_type_light");
+    bicycleName.classList.toggle("bicycles__card-name_type_dark");
+  }
   bicycleElement.setAttribute("href", href)
   bicycleImage.setAttribute("src", src);
   bicycleImage.setAttribute("alt", alt);

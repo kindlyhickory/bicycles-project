@@ -3,4 +3,9 @@
   position: absolute;
   left: 0;
   bottom: 16px;
+  @include phone {
+    bottom: 14px;
+    width: 70px;
+    height: 28px;
+  }
 }

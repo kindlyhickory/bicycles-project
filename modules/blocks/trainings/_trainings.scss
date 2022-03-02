@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 38.42% auto;
   box-sizing: border-box;
-  padding: 150px 120px 120px 120px;
+  padding: 160px 120px 120px 120px;
   column-gap: 160px;
 
   @include tinyDesktop {
@@ -19,7 +19,7 @@
 
   @include phone {
     grid-template-columns: 1fr;
-    padding: 40px 18px;
+    padding: 40px 18px 60px 18px;
     column-gap: 0;
     row-gap: 40px;
     @include grayLinePhone;

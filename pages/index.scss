@@ -8,17 +8,25 @@
 @import "../modules/blocks/nav/nav";
 @import "../modules/blocks/links/links";
 @import "../modules/blocks/links/__item/links__item";
-@import "../modules/blocks/links/_popup/links_popup";
-@import "../modules/blocks/links/__item/_popup/links__item_popup";
+@import "../modules/blocks/links/_type/links_type_popup";
+@import "../modules/blocks/links/__item/_type/links__item_type_popup";
+@import "../modules/blocks/main-title/main-title";
+@import "../modules/blocks/main-subtitle/main-subtitle";
+
+
 @import "../modules/blocks/link/link";
+@import "../modules/blocks/link/_type/link_type_dark-bicycles";
+@import "../modules/blocks/link/_type/link_type_light-bicycles";
+@import "../modules/blocks/link/_active-link-theme/link_active-link-theme_dark";
+@import "../modules/blocks/link/_active-link-theme/link_active-link-theme_light";
+@import "../modules/blocks/link/_theme/link_theme_dark";
+@import "../modules/blocks/link/_theme/link_theme_light";
 
 
-@import "../modules/blocks/theme-light-title/theme-light-title";
-@import "../modules/blocks/theme-dark-title/theme-dark-title";
-@import "../modules/blocks/theme-dark-subtitle/theme-dark-subtitle";
-@import "../modules/blocks/theme-light-subtitle/theme-light-subtitle";
-@import "../modules/blocks/theme-light-link/theme-light-link";
-@import "../modules/blocks/theme-dark-link/theme-dark-link";
+@import "../modules/blocks/title/_theme/title_theme_dark";
+@import "../modules/blocks/title/_theme/title_theme_light";
+@import "../modules/blocks/subtitle/_type/subtitle_theme_dark";
+@import "../modules/blocks/subtitle/_type/subtitle_theme_light";
 
 @import "../modules/blocks/input-container/input-container";
 
@@ -64,7 +72,7 @@
 @import "../modules/blocks/bicycles/bicycles";
 @import "../modules/blocks/bicycles/__cards/bicycles__cards";
 @import "../modules/blocks/bicycles/__card-image/bicycles__card-image";
-@import "../modules/blocks/bicycles/__card-image/bicycles__card-image";
+@import "../modules/blocks/bicycles/__card-image/_theme/bicycles__card-image_theme_dark";
 @import "../modules/blocks/bicycles/__card-name/bicycles__card-name";
 @import "../modules/blocks/bicycles/__card-name/_type/bicycles__card-name_type_dark";
 @import "../modules/blocks/bicycles/__card-name/_type/bicycles__card-name_type_light";
@@ -77,10 +85,6 @@
 @import "../modules/blocks/bicycles/__about/bicycles__about";
 @import "../modules/blocks/bicycles/__swiper/bicycles__swiper";
 @import "../modules/blocks/bicycles/__swiper-pagination/bicycles__swiper-pagination";
-@import "../modules/blocks/theme-light-link/_type/theme-light-link_type_bicycles";
-@import "../modules/blocks/theme-light-link/_active/theme-light-link_active";
-@import "../modules/blocks/theme-dark-link/_type/theme-dark-link_type_bicycles";
-@import "../modules/blocks/theme-dark-link/_active/theme-dark-link_active";
 @import "../modules/blocks/bicycles/__swiper-wrapper/bicycles__swiper-wrapper";
 
 @import "../modules/blocks/swiper-pagination-bullet/swiper-pagination-bullet";
@@ -118,7 +122,7 @@
 @import "../modules/blocks/switcher/__button/switcher__button";
 @import "../modules/blocks/switcher/__icon/_dark/switcher__icon_dark";
 @import "../modules/blocks/switcher/__icon/switcher__icon";
-@import "../modules/blocks/switcher/_popup/switcher_popup";
+@import "../modules/blocks/switcher/_type/switcher_type_popup";
 @import "../modules/blocks/footer/__switcher/footer__switcher";
 
 

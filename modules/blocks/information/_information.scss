@@ -9,6 +9,7 @@
   grid-template-rows: repeat(2, minmax(min-content, max-content));
   gap: 50px;
 
+  top: 20px;
   @include tinyDesktop {
     padding: 20px 0 0 60px;
   }

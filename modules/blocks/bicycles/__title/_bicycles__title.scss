@@ -1,11 +1,7 @@
 .bicycles__title {
-  @include font-styling(bold, 55px, 60px);
   margin: 0;
   display: inline-block;
 
-  @include tinyDesktop {
-    @include font-styling(bold, 45px, 50px);
-  }
 
   @include tablet {
     margin-bottom: 20px;
@@ -13,6 +9,5 @@
 
   @include phone {
     margin: 0 0 40px 0;
-    @include font-styling(bold, 32px, 40px);
   }
 }

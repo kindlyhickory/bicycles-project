@@ -2,6 +2,7 @@
   height: 0;
   overflow: hidden;
   @include phone {
+    @include flex(row-reverse, center, flex-start);
     visibility:visible;
     opacity: 1;
     width: 100vw;

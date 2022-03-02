@@ -40,15 +40,6 @@
 
 }
 
-@mixin whiteColor {
-  color: #fff;
-}
-
-@mixin grayColor {
-  color: #e5e5e5;
-  opacity: .7;
-}
-
 @mixin grayLinePhone {
   position: relative;
   margin-top: 40px;
